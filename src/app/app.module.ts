@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { StartupsModule } from './features/startups/startups.module';
 import { PeopleModule } from './features/people/people.module';
 import { EventsModule } from './features/events/events.module';
+import { SpacesModule } from './features/spaces/spaces.module';
 import { routes } from './routes';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { routes } from './routes';
     StartupsModule,
     PeopleModule,
     EventsModule,
+    SpacesModule,
     RouterModule.forRoot(routes, { enableTracing: true })
   ],
   providers: [],
