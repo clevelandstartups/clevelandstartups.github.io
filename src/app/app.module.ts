@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { StartupsModule } from './features/startups/startups.module';
 import { PeopleModule } from './features/people/people.module';
+import { EventsModule } from './features/events/events.module';
 import { routes } from './routes';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { routes } from './routes';
     HttpModule,
     StartupsModule,
     PeopleModule,
-    RouterModule.forRoot(routes, {enableTracing: true})
+    EventsModule,
+    RouterModule.forRoot(routes, { enableTracing: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
