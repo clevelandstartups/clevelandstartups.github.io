@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { StartupsModule } from './features/startups/startups.module';
+import { PeopleModule } from './features/people/people.module';
 import { routes } from './routes';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { routes } from './routes';
     FormsModule,
     HttpModule,
     StartupsModule,
+    PeopleModule,
     RouterModule.forRoot(routes, {enableTracing: true})
   ],
   providers: [],
