@@ -10,6 +10,7 @@ import { PeopleModule } from './features/people/people.module';
 import { EventsModule } from './features/events/events.module';
 import { SpacesModule } from './features/spaces/spaces.module';
 import { routes } from './routes';
+import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { routes } from './routes';
     PeopleModule,
     EventsModule,
     SpacesModule,
-    RouterModule.forRoot(routes, { enableTracing: true })
+    RouterModule.forRoot(routes, { enableTracing: true }),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
