@@ -1,3 +1,25 @@
-<p>
-  startups works!
-</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let startup of startups" class="col-sm-6 col-md-4 col-lg-3 mt-4" id="outter-block">
+            <div class="card">
+                <img class="card-img-top" src="{{ startup.logo }}">
+                <div class="card-block">
+                    <h4 class="card-title mt-3">{{ startup.name }}</h4>
+                    <div class="meta">
+                        <a>{{ startup.tagLine }}</a>
+                    </div>
+                    <div class="card-text">
+                        {{ startup.description }}
+                    </div>
+                </div>
+                <div *ngIf="startup.socialLinks" class="card-footer">
+                    <ul class="list-inline">
+                        <li *ngFor="let link of startup.socialLinks" class="list-inline-item">
+                            <a href="{{ link.destination }}" class="{{ link.class }}"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
