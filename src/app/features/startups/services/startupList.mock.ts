@@ -5,7 +5,11 @@ export const startupList: Startup[] = [
         name: 'GiveBackHack',
         tagLine: 'The launchpad for social impact.',
         description: 'We bring community together to create and launch sustainable solutions for social impact',
-        logo: 'https://pbs.twimg.com/profile_images/670280549135613952/dHCMviC-_400x400.png',
+        logo: {
+            img: 'GiveBackHack',
+            link: 'https://pbs.twimg.com/profile_images/670280549135613952/dHCMviC-_400x400.png',
+            destination: 'https://givebackhack.com/'
+        },
         socialLinks: [
             {
                 name: 'website',
@@ -33,7 +37,11 @@ export const startupList: Startup[] = [
         name: 'ExpenseBot',
         tagLine: 'Fast and powerful expense management.',
         description: 'ExpenseBot makes your company\'s expense reporting easier every step of the way. See how your team can spend up to 80% less time on expense reports.',
-        logo: 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/264620-2a69e1c284db1b20458a187bb72fd499-medium_jpg.jpg?buster=1474573013',
+        logo: {
+            img: 'Expensebot',
+            link: 'https://d1qb2nb5cznatu.cloudfront.net/startups/i/264620-2a69e1c284db1b20458a187bb72fd499-medium_jpg.jpg?buster=1474573013',
+            destination: 'https://expensebot.com/'
+        },
         socialLinks: [
             {
                 name: 'facebook',
